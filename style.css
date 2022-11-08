@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+}
+.section .contenar{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.contenar .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contenar .title h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #88941e;
+    animation-name: ani;
+    animation-duration: 3s ;
+   
+}
+.contenar .title h2::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color:#ed0909;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transform: rotate(6deg);
+
+
+}
+img{
+    width:100%;
+    height: 400px;
+}
+.content{
+    float: left;
+    width: 50%;
+     box-shadow: 10px 10px 5px #0f0707;
+    /* box-shadow: -1px 0px 30px 5px red, 5px 5px 30px 5px blue;  */
+    animation-name: ani;
+    animation-duration: 3s ;
+   
+}
+.image-section{
+    
+     box-shadow: inset 0 -3em 3em rgba(224, 9, 9, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    /* box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;  */
+    float: right;
+    width: 40%;
+    height: auto;
+    transform: rotate(-8deg); 
+    animation-name: ani;
+    animation-duration: 3s ;
+ 
+   
+}
+.content .article h2 span{
+    color: red;
+}
+.content .article .button{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transform: rotate(6deg);
+}
+.content .article .button a{
+   text-decoration: none;
+   padding: 8px 25px;
+   background-color: #88941e;
+   border-radius: 4px;
+   color: #fff;
+   font-size:18px ;
+   letter-spacing: 1.5px;
+  
+   
+}
+.contenar .article .button a:hover{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    border-color:#f28f92 ;
+    transition: 1s ease;
+    transform: rotate(160deg);
+    
+}
+.contenar .article i{
+    font-size: 30px;
+    margin-left: 40px;
+    color: red;
+}
+ .social{
+    
+ 
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+ .social i{
+    color: #88941e;
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fffcfc;
+    margin: 0px 15px;
+    animation-name: ani;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+    
+
+}
+.contenar .social i:hover{
+    font-size: 30px;
+    color: #fff;
+    background-color: #88941e;
+    transition: 1s ease ease-in;
+    
+   
+}
+@keyframes ani{
+    0%{
+        box-shadow:  10px -20em 3em rgba(224, 9, 9, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transform: rotate(-8deg); 
+    }
+    100%{
+        box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+    }
+}
+@keyframes ani{
+    0%{
+        box-shadow:  10px -20em 3em rgba(224, 9, 9, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transform: rotate(8deg); 
+    }
+    100%{
+        box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+    }
+}
+@media screen and (max-width:768px){
+    .contenar .title{
+       
+        
+        margin-bottom: 10px;
+    }
+    .content{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+    .content .article{
+        
+        text-align: center;
+    }
+    .image-section{
+        margin: auto;
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .content .article .button{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .social{
+        width: 100%;
+        margin-top: 30px;
+        margin: auto;
+    }
+    .contenar .article i{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
